@@ -1,7 +1,7 @@
 Device Tree for SONY XPERIA XA1 Ultra (redwood)
 ==================================================
 
-The SONY XPERIA XA1 Ultra (codenamed _"redwood"_) is a mid-range phne from SONY.
+The SONY XPERIA XA1 Ultra (codenamed _"redwood"_) is a mid-range phone from SONY.
 It was released in April 2017.
 
 
