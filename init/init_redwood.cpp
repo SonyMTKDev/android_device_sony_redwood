@@ -61,11 +61,11 @@ void vendor_load_properties()
 
             if (model == "G3212" || model == "G3226")
             {
-                property_set("persist.radio.multisim.config", "dsds");
+                property_override("persist.radio.multisim.config", "dsds");
             }
             else
             {
-                property_set("persist.radio.multisim.config", "ss");
+                property_override("persist.radio.multisim.config", "ss");
             }
 
             property_override("ro.product.device", model.c_str());
