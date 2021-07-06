@@ -20,7 +20,3 @@ $(call inherit-product-if-exists, vendor/sony/redwood/redwood-vendor.mk)
 # Display
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
-
-# Screen density
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
