@@ -14,9 +14,15 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/sony/hinoki
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/sony/redwood/redwood-vendor.mk)
 
 # Display
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
+
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/sensors/hals.conf:system/vendor/etc/sensors/hals.conf
