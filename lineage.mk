@@ -25,7 +25,7 @@ $(call inherit-product, device/sony/redwood/device.mk)
 $(call inherit-product, device/sony/mt6757-common/mt6757.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit languages full.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
