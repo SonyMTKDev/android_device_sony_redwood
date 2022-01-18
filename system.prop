@@ -1,2 +1,8 @@
 # Display
 ro.sf.lcd_density=480
+
+# SEMC
+ro.semc.ms_type_id=PM-1010-BV
+ro.semc.version.fs=GENERIC
+ro.semc.product.name=Xperia XA1 Ultra
+ro.semc.product.device=G32
