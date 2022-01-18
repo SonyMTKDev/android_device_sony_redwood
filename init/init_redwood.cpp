@@ -35,7 +35,15 @@
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
+#include <android-base/file.h>
+#include <android-base/logging.h>
+#include <android-base/properties.h>
+#include <android-base/strings.h>
+
 #include "vendor_init.h"
+#include "property_service.h"
+
+using android::init::property_set;
 
 constexpr auto LTALABEL_PATH = "/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/ltalabel";
 
@@ -68,6 +76,8 @@ void vendor_load_properties()
                 property_override("persist.radio.multisim.config", "ss");
             }
 
+            property_set("ro.cei.projectid", model.c_str());
+            property_override("ro.product.device", model.c_str());
             property_override("ro.product.device", model.c_str());
             property_override("ro.product.model", model.c_str());
             property_override("ro.product.name", model.c_str());
