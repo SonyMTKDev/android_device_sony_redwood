@@ -34,3 +34,6 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Device Specific Init
 TARGET_INIT_VENDOR_LIB := libinit_redwood
+
+# System Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
