@@ -77,6 +77,7 @@ void vendor_load_properties()
             }
 
             property_set("ro.cei.projectid", model.c_str());
+            property_set("ro.semc.product.model", model.c_str());
             property_override("ro.product.device", model.c_str());
             property_override("ro.product.device", model.c_str());
             property_override("ro.product.model", model.c_str());
